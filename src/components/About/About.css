@@ -1,0 +1,67 @@
+.about-page {
+    padding-top: 80px;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/images/about-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.mission-section {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.vision-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.vision-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.principles-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.principles-list li {
+    background: var(--background-light);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.team-section {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+@media (max-width: 768px) {
+    .vision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .principles-list {
+        grid-template-columns: 1fr;
+    }
+} 

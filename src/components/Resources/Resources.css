@@ -1,0 +1,59 @@
+.resources-page {
+    padding-top: 80px;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/images/resources-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.resource-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.media-library {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.media-category {
+    background: var(--background-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.glossary {
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .media-library {
+        grid-template-columns: 1fr;
+    }
+
+    .glossary {
+        column-count: 1;
+    }
+} 

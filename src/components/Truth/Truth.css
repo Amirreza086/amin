@@ -1,0 +1,40 @@
+.truth-page {
+    padding-top: 80px;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/images/truth-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.truth-section {
+    margin: 4rem 0;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.timeline {
+    margin: 2rem 0;
+    position: relative;
+}
+
+.case-studies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 200px;
+    }
+} 
